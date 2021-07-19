@@ -29,7 +29,9 @@ h1 {
 
 .grid div {
     font-size: 25px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -74,6 +76,12 @@ h1 {
     color: #bb41d3;
 }
 
+.flags-left {
+    font-size: 18px; 
+    font-weight: bold; 
+    font-family: sans-serif;
+}
+
 .result {
     margin-top: 20px;
     font-size: 30px;
@@ -99,4 +107,60 @@ h1 {
     margin-left: 45px;
     align-self: center;
     font-size: 80px;
+}
+
+@media screen and (max-width: 400px) {
+    h1 {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .grid {
+        height: 200px;
+        width: 200px;
+        border: 6px solid #7fe9eb;
+    }
+
+    .grid div {
+        font-size: 8px;
+    }
+
+    .valid {
+        height: 20px;
+        width: 20px;
+    }
+
+    .bomb {
+        height: 20px;
+        width: 20px;
+    }
+
+    .checked {
+        height: 20px;
+        width: 20px;
+    }
+
+    .flags-left {
+        font-size: 12px;
+    }
+
+    .result {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .board {
+        justify-content: space-evenly;
+    }
+
+    .boom-1 {
+        font-size: 30px;
+        margin-right: 0px;
+    }
+
+    .boom-2 {
+        font-size: 30px;
+        margin-left: 0px;
+    }
 }
