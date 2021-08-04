@@ -109,7 +109,18 @@ h1 {
     font-size: 80px;
 }
 
-@media screen and (max-width: 450px) {
+.reset-button {
+    width: 25%;
+    padding: 10px;
+    background-color: rgb(2, 120, 160);
+    color: #fff;
+    border: 0px;
+    border-radius: 4px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 750px) {
     h1 {
         margin-top: 0px;
         margin-bottom: 10px;
@@ -117,28 +128,28 @@ h1 {
     }
 
     .grid {
-        height: 200px;
-        width: 200px;
+        height: 300px;
+        width: 300px;
         border: 6px solid #7fe9eb;
     }
 
     .grid div {
-        font-size: 8px;
+        font-size: 14px;
     }
 
     .valid {
-        height: 20px;
-        width: 20px;
+        height: 30px;
+        width: 30px;
     }
 
     .bomb {
-        height: 20px;
-        width: 20px;
+        height: 30px;
+        width: 30px;
     }
 
     .checked {
-        height: 20px;
-        width: 20px;
+        height: 30px;
+        width: 30px;
     }
 
     .flags-left {
@@ -155,12 +166,33 @@ h1 {
     }
 
     .boom-1 {
-        font-size: 30px;
-        margin-right: 0px;
+        display: none;
     }
 
     .boom-2 {
-        font-size: 30px;
-        margin-left: 0px;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .grid {
+        height: 250px;
+        width: 250px;
+        border: 4px solid #7fe9eb;
+    }
+
+    .valid {
+        height: 25px;
+        width: 25px;
+    }
+
+    .bomb {
+        height: 25px;
+        width: 25px;
+    }
+
+    .checked {
+        height: 25px;
+        width: 25px;
     }
 }
