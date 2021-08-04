@@ -169,8 +169,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             if (matches === bombCount) {
                 result.innerHTML = 'YOU WIN!'
-                boomElement1.innerHTML = ' 🚩 '
-                boomElement2.innerHTML = ' 🚩 '
+                boomElement1.innerHTML = ' 🎊 '
+                boomElement2.innerHTML = ' 🎊 '
                 isGameOver = true
             }
         }
